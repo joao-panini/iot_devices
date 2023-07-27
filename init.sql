@@ -1,5 +1,3 @@
-CREATE DATABASE iotdb;
-
 \c iotdb;
 
 CREATE TABLE temperature_sensor (
