@@ -1,4 +1,6 @@
 # iot_devices
+docker-compose up --build -d
+
 psql -h localhost -U postgres -d postgres
 
 password: postgres
