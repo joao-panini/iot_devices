@@ -1,0 +1,26 @@
+-- FILE : 000001_initialize_schema.up.sql
+CREATE TABLE temperature_sensor (
+    id SERIAL PRIMARY KEY,
+    device_id INT NOT NULL,
+    temperature VARCHAR NOT NULL,
+    unit VARCHAR NOT NULL,
+    timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE velocity_sensor (
+    id SERIAL PRIMARY KEY,
+    device_id INT NOT NULL,
+    velocity VARCHAR NOT NULL,
+    unit VARCHAR NOT NULL,
+    timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE traffic_sensor (
+    id SERIAL PRIMARY KEY,
+    device_id INT NOT NULL,
+    plate_number VARCHAR NOT NULL,
+    timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
